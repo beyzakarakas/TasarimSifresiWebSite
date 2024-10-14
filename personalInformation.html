@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Bilgilerim Formu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/personalInformation.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card p-4 shadow">
+                    <h4 class="card-title text-center mb-4">Kişisel Bilgilerim</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ad">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Soyad">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-posta">
+                            <small class="form-text text-muted">Oturum linki e-posta adresinize gönderilecektir.</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Telefon Numarası">
+                            <small class="form-text text-muted">Randevu işlemleriniz için kolay iletişim açısından
+                                telefon numaranızı girebilirsiniz.</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" placeholder="Doğum Tarihi">
+                            <small class="form-text text-muted">Doğum Tarihi</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Doğum Yeri">
+                        </div>
+                        <div class="form-group">
+                            <input type="time" class="form-control" placeholder="Doğum Saati">
+                            <small class="form-text text-muted">Doğum Saati</small>
+
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <div class="form-check mb-0">
+                                <label class="form-check-label campaign-code" for="kampanya">
+                                    Kampanya kodum var
+                                </label>
+                            </div>
+                            <input type="text" class="form-control form-control-sm ml-2 kampanya-input"
+                                id="kampanyaKodu" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="kvkk" name="kvkk" required>
+                                <label class="form-check-label" for="kvkk"><a href="https://www.tasarimsifresi.com/"
+                                        target="_blank"><b>Kişisel Verileri Koruma Kanunu</b></a>
+                                    çerçevesinde kişisel bilgilerimin iletilmesini kabul
+                                    ediyorum.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="mail-accept" name="mail-accept"
+                                    required>
+                                <label class="form-check-label" for="mail-accept" style="margin-top: 18px">Elektronik
+                                    ileti gönderilmesini kabul
+                                    ediyorum.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" id="submitButton" class="green-button">Ödemeye geç</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function (event) {
+            event.preventDefault(); // Linkin doğal davranışını engelle
+            if (document.getElementById('kvkk').checked && document.getElementById('mail-accept').checked) {
+                window.location.href = 'basket.html'; // Her iki checkbox işaretliyse yönlendir
+            } else {
+                alert('Lütfen tüm onay kutularını işaretleyin.');
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+    background-color: #002b49;
+    color: white;
+    font-family: 'Telegraf', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    color: #002b49;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 25px;
+}
+
+.input-group .form-control {
+    border-radius: 0px;
+    text-align: center;
+}
+
+.input-group .input-group-prepend .btn,
+.input-group .input-group-append .btn {
+    border-radius: 0;
+}
+
+.form-check-label {
+    margin-right: 10px;
+}
+
+.quantity {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-input {
+    width: 120px;
+    /* Rakam yazılan input alanını küçültmek için */
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+@media (max-width: 767px) {
+    .quantity {
+        margin-top: 10px;
+    }
+
+    .form-check-label {
+        flex-grow: 1;
+    }
+}
+
+.button-container a {
+    color: #002b49;
+}
+
+.basket-card {
+    background-color: transparent;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.form-control {
+    border-color: #002b49;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.text-danger {
+    margin-left: 10px;
+}
+
+.form-check-input {
+    height: 50px;
+    width: 15px;
+}
+
+.card-title {
+    font-family: 'Kudryashev Display', serif;
+}

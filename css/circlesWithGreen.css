@@ -1,0 +1,41 @@
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.circle.green {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #36B88D 30%, rgba(72, 189, 152, 0) 70%);
+    top: 10%;
+    left: 36%;
+}
+
+.circle.blue {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #3b86c7 10%, rgba(41, 128, 185, 0) 70%);
+    top: 0%;
+    left: 40%;
+}
+
+.circle.white {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    top: 65%;
+    left: 53%;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    overflow: hidden; /* Taşan kısmı kesmek için */
+}
+
+header .container {
+    position: relative;
+    z-index: 3;
+}

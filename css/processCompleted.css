@@ -1,0 +1,49 @@
+body {
+    background-color: #002b49;
+    color: white;
+    font-family: 'Telegraf', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    color: #002b49;
+}
+
+.card-title {
+    font-family: 'Kudryashev Display', serif;
+}
+
+.form-control {
+    border-radius: 25px;
+    border-color: #002b49;
+    height: 50px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+.button-container {
+    font-family: 'Telegraf', sans-serif;
+}
+
+.button-container a {
+    color: #002b49;
+}
+
+.form-group {
+    font-family: 'Telegraf', sans-serif;
+} 
+
+.texts{
+    margin-top: 20px;
+    color: #002b49;
+    font-weight: bold;
+}
